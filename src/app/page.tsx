@@ -29,7 +29,7 @@ export default function Home() {
     return (
         <>
             <MaxWidthWrapper>
-                <div className='py-20 mx-auto text-center flex flex-col items-center max-w-3xl'>
+                <div className='py-20 mx-auto text-center flex flex-col items-center max-w-5xl'>
                     <h1 className='text-4xl font-bold tracking-light text-grey-900 sm:text-6xl'>
                         Quality
                         <span className='text-red-600'> vending machine </span>

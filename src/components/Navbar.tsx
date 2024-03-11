@@ -31,7 +31,7 @@ const Navbar = () => {
                                 <div className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>
 
                                     <div className='text-lg text-muted-foreground items-center justify-center'>
-                                         <Phone className='inline mr-3 text-red-900'/>
+                                         <Phone className='inline mr-3 text-red-600'/>
                                         717-558-9921
                                     </div>
 
