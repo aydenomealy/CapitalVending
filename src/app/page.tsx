@@ -7,6 +7,7 @@ import {Drill, Joystick, Rabbit} from "lucide-react";
 import {allowedDisplayValues} from "next/dist/compiled/@next/font/dist/constants";
 import React from "react";
 import ProductTabs from "@/components/ProductTabs";
+import CustomerCarousel from "@/components/CustomerCarousel";
 
 const perks = [
     {
@@ -30,7 +31,7 @@ export default function Home() {
         <>
             <MaxWidthWrapper>
                 <div className='py-20 mx-auto text-center flex flex-col items-center max-w-5xl'>
-                    <h1 className='text-4xl font-bold tracking-light text-grey-900 sm:text-6xl'>
+                    <h1 className=' mb-4 text-4xl font-bold tracking-light text-grey-900 sm:text-6xl'>
                         Quality
                         <span className='text-red-600'> vending machine </span>
                         services
@@ -46,6 +47,10 @@ export default function Home() {
                         <Link href='/contact' className={buttonVariants()}>Contact us today</Link>
                     </div>
                 </div>
+            </MaxWidthWrapper>
+
+            <MaxWidthWrapper >
+                <CustomerCarousel/>
             </MaxWidthWrapper>
 
             <MaxWidthWrapper className='mb-8'>

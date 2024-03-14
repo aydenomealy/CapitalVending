@@ -14,11 +14,11 @@ const Footer = () => {
     ]
 
     return (
-        <footer className='bg-white flex-grow-0'>
+        <footer className='bg-white flex-grow-0 border-t'>
             <MaxWidthWrapper>
-                <div className='border-t border-b-red-600'>
+                <div>
                     {pathsToMinimize.includes(pathname) ? null : (
-                        <div className='pb-8 pt-16'>
+                        <div className='pb-4 pt-8'>
                             <div className='flex justify-center'>
                                 <Icons.logo className="h-12 w-auto"/>
                             </div>
