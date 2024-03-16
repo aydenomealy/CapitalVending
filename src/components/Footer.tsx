@@ -10,11 +10,12 @@ const Footer = () => {
     const pathsToMinimize = [
         '/about',
         '/contact',
-        '/careers'
+        '/careers',
+        '/products'
     ]
 
     return (
-        <footer className='bg-white flex-grow-0 border-t'>
+        <footer className='bg-white flex-grow-0'>
             <MaxWidthWrapper>
                 <div>
                     {pathsToMinimize.includes(pathname) ? null : (

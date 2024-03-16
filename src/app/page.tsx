@@ -31,7 +31,7 @@ export default function Home() {
         <>
             <MaxWidthWrapper>
                 <div className='py-20 mx-auto text-center flex flex-col items-center max-w-5xl'>
-                    <h1 className=' mb-4 text-4xl font-bold tracking-light text-grey-900 sm:text-6xl'>
+                    <h1 className='mb-4 text-4xl font-bold tracking-light text-grey-900 sm:text-6xl'>
                         Quality
                         <span className='text-red-600'> vending machine </span>
                         services
@@ -45,20 +45,18 @@ export default function Home() {
                     </p>
                     <div className='flex flex-col sm:flex-row gap-4 mt-6'>
                         <Link href='/contact' className={buttonVariants()}>Contact us today</Link>
+                        <Button asChild variant='ghost'>
+                            <Link href='/'>Products & Services &rarr;</Link>
+                        </Button>
                     </div>
                 </div>
             </MaxWidthWrapper>
 
-            <MaxWidthWrapper >
-                <CustomerCarousel/>
-            </MaxWidthWrapper>
+            {/*<MaxWidthWrapper className='mb-8'>*/}
+            {/*    <ProductTabs/>*/}
+            {/*</MaxWidthWrapper>*/}
 
-            <MaxWidthWrapper className='mb-8'>
-                <ProductTabs/>
-            </MaxWidthWrapper>
-
-
-            <section className='border-t border-gray-200 bg-gray-50'>
+            <section className='border-t border-gray-200 bg-gray-50 border-b'>
                 <MaxWidthWrapper className='py-20'>
                     <div className='grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0'>
                         {perks.map((perk) => (
@@ -81,6 +79,10 @@ export default function Home() {
                     </div>
                 </MaxWidthWrapper>
             </section>
+
+            <MaxWidthWrapper>
+                <CustomerCarousel/>
+            </MaxWidthWrapper>
         </>
     )
 }

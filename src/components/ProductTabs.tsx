@@ -6,7 +6,7 @@ import {Card, CardContent, CardFooter} from "@/components/ui/card";
 
 const ProductTabs = () => {
     return <div className='text-center'>
-        <Tabs defaultValue="Coin-operated Games" className='w-full'>
+        <Tabs defaultValue="Arcade and Amusements" className='w-full'>
             <TabsList className='mx-auto w-fit max-w-4xl block'>
                 {PRODUCT_CATEGORIES.map((category) => {
                     return <TabsTrigger key={category.value} value={category.label}>{category.label}</TabsTrigger>

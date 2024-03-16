@@ -3,7 +3,7 @@ import {z} from "zod";
 export const PRODUCT_CATEGORIES = [
     {
         label: "Arcade and Amusements",
-        value: "coin_operated_games" as const,
+        value: "arcade_amusement" as const,
         featured: [
             {
                 name: "Arcade Machines",
@@ -91,6 +91,69 @@ export const PRODUCT_CATEGORIES = [
             },
         ]
     }
+]
+
+export const CAROUSEL_IMAGES = [
+    {
+        name: "7-11 logo",
+        value: "711" as const,
+        imgSrc: "/scroller/711.png"
+    },
+    {
+        name: "Amusement Connect Logo",
+        value: "amusementconnect" as const,
+        imgSrc: "/scroller/amusementconnect.png"
+    },
+    {
+        name: "Buffalo Wild Wings Logo",
+        value: "BuffaloWildWings" as const,
+        imgSrc: "/scroller/BuffaloWildWings.jpg"
+    },
+    {
+        name: "Cartoon Network Logo",
+        value: "CartoonNetwork" as const,
+        imgSrc: "/scroller/Cartoon_Network.svg"
+    },
+    {
+        name: "First National Bank Field Logo",
+        value: "FirstNationalBank" as const,
+        imgSrc: "/scroller/First_National_Bank_Field.png"
+    },
+    {
+        name: "Raw Thrills Logo",
+        value: "RawThrills" as const,
+        imgSrc: "/scroller/RawThrills.png"
+    },
+    {
+        name: "Giant Logo",
+        value: "Giant" as const,
+        imgSrc: "/scroller/giant.jpeg"
+    },
+    {
+        name: "Hershey Park Logo",
+        value: "HersheyPark" as const,
+        imgSrc: "/scroller/HersheyParkLogo.png"
+    },
+    {
+        name: "Pipeline Logo",
+        value: "Pipeline" as const,
+        imgSrc: "/scroller/pipeline.png"
+    },
+    {
+        name: "Speedway Logo",
+        value: "Speedway" as const,
+        imgSrc: "/scroller/Speedway.png"
+    },
+    {
+        name: "Stern Logo",
+        value: "Stern" as const,
+        imgSrc: "/scroller/stern.png"
+    },
+    {
+        name: "TouchTunes Logo",
+        value: "TouchTunes" as const,
+        imgSrc: "/scroller/touchtunes.jpg"
+    },
 ]
 
 export const CONTACT_SCHEMA = z.object({
