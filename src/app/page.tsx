@@ -1,12 +1,8 @@
-import Image from "next/image";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Link from "next/link";
 import {Button, buttonVariants} from "@/components/ui/button";
-import {intersection} from "ts-interface-checker";
 import {Drill, Joystick, Rabbit} from "lucide-react";
-import {allowedDisplayValues} from "next/dist/compiled/@next/font/dist/constants";
 import React from "react";
-import ProductTabs from "@/components/ProductTabs";
 import CustomerCarousel from "@/components/CustomerCarousel";
 
 const perks = [
@@ -46,15 +42,11 @@ export default function Home() {
                     <div className='flex flex-col sm:flex-row gap-4 mt-6'>
                         <Link href='/contact' className={buttonVariants()}>Contact us today</Link>
                         <Button asChild variant='ghost'>
-                            <Link href='/'>Products & Services &rarr;</Link>
+                            <Link href='/products'>Products & Services &rarr;</Link>
                         </Button>
                     </div>
                 </div>
             </MaxWidthWrapper>
-
-            {/*<MaxWidthWrapper className='mb-8'>*/}
-            {/*    <ProductTabs/>*/}
-            {/*</MaxWidthWrapper>*/}
 
             <section className='border-t border-gray-200 bg-gray-50 border-b'>
                 <MaxWidthWrapper className='py-20'>

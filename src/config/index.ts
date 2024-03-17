@@ -2,22 +2,22 @@ import {z} from "zod";
 
 export const PRODUCT_CATEGORIES = [
     {
-        label: "Arcade and Amusements",
+        label: "Arcade & Amusements",
         value: "arcade_amusement" as const,
         featured: [
             {
                 name: "Arcade Machines",
-                href: "#",
+                description: "We have a wide selection of fully restored classic arcade machines. ",
+                imageSrc: "/nav/machines/arcade.jpg"
+            },
+            {
+                name: "Pinball",
+                description: "",
                 imageSrc: "/nav/machines/pinball.jpg"
             },
             {
-                name: "Darts",
-                href: "#",
-                imageSrc: "/nav/machines/jukebox.jpg"
-            },
-            {
                 name: "Golden Tee",
-                href: "#",
+                description: "",
                 imageSrc: "/nav/machines/atm.jpg"
             },
 
@@ -29,18 +29,18 @@ export const PRODUCT_CATEGORIES = [
         featured: [
             {
                 name: "Cranes",
-                href: "#",
-                imageSrc: "/nav/merchandise/pinball.jpg"
+                description: "",
+                imageSrc: "/nav/machines/pinball.jpg"
             },
             {
                 name: "ATMs",
-                href: "#",
-                imageSrc: "/nav/merchandise/jukebox.jpg"
+                description: "",
+                imageSrc: "/nav/machines/jukebox.jpg"
             },
             {
                 name: "Prizes",
-                href: "#",
-                imageSrc: "/nav/merchandise/atm.jpg"
+                description: "",
+                imageSrc: "/nav/machines/atm.jpg"
             },
         ]
     },
@@ -50,23 +50,23 @@ export const PRODUCT_CATEGORIES = [
         featured: [
             {
                 name: "Touch Tunes Jukebox",
-                href: "#",
-                imageSrc: "/nav/merchandise/jukebox.jpg"
+                description: "",
+                imageSrc: "/nav/machines/touchtunes.jpg"
             },
             {
                 name: "Dart Boards",
-                href: "#",
-                imageSrc: "/nav/merchandise/dart.jpg"
+                description: "",
+                imageSrc: "/nav/machines/dart.jpg"
             },
             {
                 name: "Pool Tables",
-                href: "#",
-                imageSrc: "/nav/merchandise/pool.jpg"
+                description: "",
+                imageSrc: "/nav/machines/pool.jpg"
             },
             {
                 name: "Pinball",
-                href: "#",
-                imageSrc: "/nav/merchandise/pinball.jpg"
+                description: "",
+                imageSrc: "/nav/machines/pinball.jpg"
             },
         ]
     },
@@ -76,17 +76,22 @@ export const PRODUCT_CATEGORIES = [
         featured: [
             {
                 name: "ATM Service",
-                href: "#",
+                description: "",
                 imageSrc: "/nav/merchandise/atm.jpg"
             },
             {
+                name: "Outdoor ATMs",
+                description: "",
+                imageSrc: "/nav/merchandise/outdoor.jpg"
+            },
+            {
                 name: "Merchant Loading",
-                href: "#",
+                description: "",
                 imageSrc: "/nav/merchandise/amt2.jpg"
             },
             {
                 name: "Event ATM's",
-                href: "#",
+                description: "",
                 imageSrc: "/nav/merchandise/eventatm.jpg"
             },
         ]
@@ -167,7 +172,7 @@ export const CONTACT_SCHEMA = z.object({
     message: z.string()
 })
 
-const ACCEPTED_IMAGE_TYPES = ["image/jpeg", "image/jpg", "image/png", "image/webp"];
+const ACCEPTED_FILE_TYPES = ["file/pdf", "file/docx", "file/doc"];
 
 export const CAREER_SCHEMA = z.object({
     name: z.string().min(1, {
@@ -181,10 +186,10 @@ export const CAREER_SCHEMA = z.object({
     }),
     resume: z
         .any()
-        .refine((files) => files?.length == 1, "File is required.")
+        .refine((files) => files?.length == 1, "Please upload your resume.")
         .refine((files) => files?.[0]?.size <= 700000)
         .refine(
-            (files) => ACCEPTED_IMAGE_TYPES.includes(files?.[0]?.type),
-            ".jpg, .jpeg, .png and .webp files are accepted."
+            (files) => ACCEPTED_FILE_TYPES.includes(files?.[0]?.type),
+            ".pdf, .docx, and .doc files are accepted."
         ),
 })
