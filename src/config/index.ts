@@ -12,13 +12,14 @@ export const PRODUCT_CATEGORIES = [
             },
             {
                 name: "Pinball",
-                description: "",
+                description: "We have a wide selection of fully restored classic pinball machines.",
                 imageSrc: "/nav/machines/pinball.jpg"
             },
             {
-                name: "Golden Tee",
-                description: "",
-                imageSrc: "/nav/machines/atm.jpg"
+                name: "Amusement Connect",
+                description: "Amusement Connect makes it easy to modernize any arcade by offering a card system. " +
+                    "Customers purchase a card at the kiosk, load it with money, and then they just tap to play.",
+                imageSrc: "/nav/machines/amusementConnect.jpg"
             },
 
         ]
@@ -30,17 +31,17 @@ export const PRODUCT_CATEGORIES = [
             {
                 name: "Cranes",
                 description: "",
-                imageSrc: "/nav/machines/pinball.jpg"
+                imageSrc: "/nav/machines/cranes.jpg"
             },
             {
                 name: "ATMs",
                 description: "",
-                imageSrc: "/nav/machines/jukebox.jpg"
+                imageSrc: "/nav/machines/a.jpg"
             },
             {
                 name: "Prizes",
                 description: "",
-                imageSrc: "/nav/machines/atm.jpg"
+                imageSrc: "/nav/machines/a.jpg"
             },
         ]
     },
@@ -50,13 +51,13 @@ export const PRODUCT_CATEGORIES = [
         featured: [
             {
                 name: "Touch Tunes Jukebox",
-                description: "",
+                description: "Touch Tunes is the leader in jukebox systems. We install a professional surround sound system in your establishment.",
                 imageSrc: "/nav/machines/touchtunes.jpg"
             },
             {
                 name: "Dart Boards",
                 description: "",
-                imageSrc: "/nav/machines/dart.jpg"
+                imageSrc: "/nav/machines/darts.jpg"
             },
             {
                 name: "Pool Tables",
@@ -65,7 +66,7 @@ export const PRODUCT_CATEGORIES = [
             },
             {
                 name: "Pinball",
-                description: "",
+                description: "We have a wide selection of fully restored classic pinball machines.",
                 imageSrc: "/nav/machines/pinball.jpg"
             },
         ]
@@ -76,23 +77,24 @@ export const PRODUCT_CATEGORIES = [
         featured: [
             {
                 name: "ATM Service",
-                description: "",
-                imageSrc: "/nav/merchandise/atm.jpg"
+                description: "We will provide, install, and maintain an ATM in your establishment. Its a completely hands off way to increase the revenue of your business.",
+                imageSrc: "/nav/machines/atm.jpg"
             },
             {
                 name: "Outdoor ATMs",
-                description: "",
-                imageSrc: "/nav/merchandise/outdoor.jpg"
+                description: "Dont have space for an ATM? We also provide outdoor atms that are secured in a solid steel enclosure." +
+                    " This allows customers to use the ATM 24/7 without even entering your establishment.",
+                imageSrc: "/nav/machines/outdoor.jpg"
             },
             {
                 name: "Merchant Loading",
-                description: "",
-                imageSrc: "/nav/merchandise/amt2.jpg"
+                description: "Want a little more involvement? We can provide you an ATM that you load yourself.",
+                imageSrc: "/nav/machines/atm2.jpg"
             },
             {
                 name: "Event ATM's",
-                description: "",
-                imageSrc: "/nav/merchandise/eventatm.jpg"
+                description: "We have a custom built ATM trailer perfect for providing atms to your event. Our remote monitoring system will make sure your event never runs out of cash.",
+                imageSrc: "/nav/machines/eventatm.jpg"
             },
         ]
     }
