@@ -3,6 +3,7 @@ import Link from "next/link";
 import {Icons} from "@/components/Icons";
 import {Phone} from "lucide-react";
 import NavItems from "@/components/NavItems";
+import MobileNav from "@/components/MobileNav";
 
 const Navbar = () => {
     return (
@@ -11,7 +12,6 @@ const Navbar = () => {
                 <MaxWidthWrapper>
                     <div className='border-b border-red-300'>
                         <div className='flex h-24 items-center'>
-
                             <div className='ml-4 flex lg:ml-0'>
                                 <Link href='/'>
                                     <Icons.logo className='h-20 w-20'/>
@@ -20,12 +20,9 @@ const Navbar = () => {
 
                             <div className='z-50 ml-8 block self-stretch '>
                                 <NavItems/>
-                                {/*<div className='flex gap-4 h-full items-center relative'>*/}
-                                {/*    <Link href='/about' className={buttonVariants({'variant':'ghost'})}>About</Link>*/}
-                                {/*    <Link href='/contact' className={buttonVariants({'variant':'ghost'})}>Contact</Link>*/}
-                                {/*    <Link href='/careers' className={buttonVariants({'variant':'ghost'})}>Careers</Link>*/}
-                                {/*</div>*/}
                             </div>
+
+                            <MobileNav/>
 
                             <div className='ml-auto flex items-center'>
                                 <div className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>

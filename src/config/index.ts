@@ -195,3 +195,36 @@ export const CAREER_SCHEMA = z.object({
             ".pdf, .docx, and .doc files are accepted."
         ),
 })
+
+export const NAV_ITEMS = [
+    {
+        name: "Home",
+        value: "home" as const,
+        href: "/",
+        num: 0
+    },
+    {
+        name: "Contact Us",
+        value: "contact" as const,
+        href: "/contact",
+        num: 1
+    },
+    {
+        name: "Careers",
+        value: "careers" as const,
+        href: "/careers",
+        num: 2
+    },
+    {
+        name: "Products & Services",
+        value: "products" as const,
+        href: "/products",
+        num: 3
+    },
+    {
+        name: "Gallery",
+        value: "gallery" as const,
+        href: "/gallery",
+        num: 4
+    },
+]

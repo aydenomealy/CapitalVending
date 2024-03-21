@@ -9,7 +9,7 @@ const perks = [
     {
         name: "Quick Response Time",
         icon: Rabbit,
-        description: "Service technicians are available at all times to fix your machines."
+        description: "Service technicians are available 24 hours a day, 7 days a week to fix your machines."
     },
     {
         name: "Professional Installation",
@@ -19,7 +19,7 @@ const perks = [
     {
         name: "Unlimited Selection",
         icon: Joystick,
-        description: "We have a wide selection of fully restored pinball machines and retro arcade cabinets."
+        description: "We have a wide selection of fully restored pinball machines, retro arcade cabinets, and more."
     }
 ]
 export default function Home() {
@@ -32,7 +32,7 @@ export default function Home() {
                         <span className='text-red-600'> vending machine </span>
                         services
                     </h1>
-                    <p className='mt-6  max-w-prose text-muted-foreground'>
+                    <p className='mt-6 max-w-prose text-muted-foreground'>
                         Capital Vending Company has been providing quality vending machine services to
                         Harrisburg, Pennsylvania for over 50 years. We have built a reputation by our
                         exceptional value, superior selection of machines as well as fast and friendly
