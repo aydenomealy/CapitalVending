@@ -7,9 +7,9 @@ import Image from "next/image";
 
 const CustomerCarousel = () => {
     return (
-        <div className='pb-8 pt-10'>
-            <h3 className='text-center mb-4 text-2xl font-bold tracking-light text-grey-900 sm:text-4xl'>
-                Our Clients Include:
+        <div className='pb-8 pt-24'>
+            <h3 className='text-center mb-4 text-l font-bold tracking-light text-grey-700 sm:text-xl'>
+                COMPANIES THAT TRUST US:
             </h3>
 
 
@@ -25,7 +25,7 @@ const CustomerCarousel = () => {
                         stopOnInteraction: false
                     })
                 ]}
-                className='h-24 mx-auto max-w-5xl'
+                className='h-24 mx-auto'
             >
                 <CarouselContent>
                     {CAROUSEL_IMAGES.map(item => (

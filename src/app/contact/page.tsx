@@ -1,6 +1,7 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import ContactForm from "@/components/ContactForm";
 import React from "react";
+import {Icons} from "@/components/Icons";
 
 export default function Home() {
     return (<MaxWidthWrapper>
@@ -11,7 +12,7 @@ export default function Home() {
                     more!
                     Our highly trained service technicians are available
                     <span className='font-bold text-black'> 24 hours a day, 7 days a week </span>
-                    to provide you with quality, dependable service you can count on.
+                    to provide you with quality, dependable service you can count on. Please fill out the form below or give us a ring at 717-558-9921.
                 </p>
 
                 <ContactForm/>

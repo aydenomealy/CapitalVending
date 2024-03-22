@@ -12,17 +12,18 @@ const Navbar = () => {
                 <MaxWidthWrapper>
                     <div className='border-b border-red-300'>
                         <div className='flex h-24 items-center'>
+
+                            <MobileNav/>
+
                             <div className='ml-4 flex lg:ml-0'>
                                 <Link href='/'>
                                     <Icons.logo className='h-20 w-20'/>
                                 </Link>
                             </div>
 
-                            <div className='z-50 ml-8 block self-stretch '>
+                            <div className='hidden z-50 ml-8 lg:block self-stretch'>
                                 <NavItems/>
                             </div>
-
-                            <MobileNav/>
 
                             <div className='ml-auto flex items-center'>
                                 <div className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>
