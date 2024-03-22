@@ -27,7 +27,7 @@ const ProductTabs = () => {
                                         className='mt-6 pr-3'>
                                         <div className='grid sm:grid-cols-3 h-full grid-cols-2'>
                                             <div
-                                                className='overflow-hidden relative lg:aspect-video aspect-square rounded-lg ce'>
+                                                className='overflow-hidden relative lg:aspect-video aspect-square rounded-lg'>
                                                 <Image
                                                     src={item.imageSrc}
                                                     alt='product catagory image'

@@ -4,6 +4,7 @@ import {Button, buttonVariants} from "@/components/ui/button";
 import {Drill, Joystick, Rabbit} from "lucide-react";
 import React from "react";
 import CustomerCarousel from "@/components/CustomerCarousel";
+import ProductsCards from "@/components/ProductsCards";
 
 const perks = [
     {
@@ -46,6 +47,10 @@ export default function Home() {
                         </Button>
                     </div>
                 </div>
+            </MaxWidthWrapper>
+
+            <MaxWidthWrapper>
+                <ProductsCards/>
             </MaxWidthWrapper>
 
             <section className='border-t border-gray-300 bg-zinc-100 border-b'>
