@@ -5,6 +5,7 @@ import {Drill, Joystick, Rabbit} from "lucide-react";
 import React from "react";
 import CustomerCarousel from "@/components/CustomerCarousel";
 import Image from "next/image"
+import ProductsCards from "@/components/ProductsCards";
 
 const perks = [
     {
@@ -47,6 +48,10 @@ export default function Home() {
                         </Button>
                     </div>
                 </div>
+            </MaxWidthWrapper>
+
+            <MaxWidthWrapper>
+                <ProductsCards/>
             </MaxWidthWrapper>
 
             <div
