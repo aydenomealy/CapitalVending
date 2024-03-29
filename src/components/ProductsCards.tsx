@@ -5,7 +5,7 @@ const ProductsCards = () => {
     return (
         <div className='grid grid-cols-3 h-full gap-10 px-10 py-12 drop-shadow-xl'>
             {PRODUCTS.map((item) => (
-                <div key={item.label} className="relative rounded-lg overflow-hidden aspect-video">
+                <div key={item.label} className="relative rounded-lg overflow-hidden aspect-video border-redSecondary border-4">
                     <Image
                         alt={item.name}
                         src={item.imageSrc}

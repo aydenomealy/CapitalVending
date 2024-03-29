@@ -19,6 +19,11 @@ const config = {
     },
     extend: {
       colors: {
+        grayBackground: "#EEE2DE",
+        bluePrimary: "#01204E",
+        redSecondary: "#DD5341",
+        peachSecondary: "#F6DCAC",
+        brownRetro: "#794A3A",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

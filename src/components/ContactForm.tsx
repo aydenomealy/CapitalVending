@@ -34,7 +34,7 @@ const ContactForm = () => {
     }
 
     return (
-        <Card className=' md:w-3/5 w-4/5 shadow-md mt-8 text-left'>
+        <Card className=' md:w-3/5 w-4/5 shadow-md mt-8 text-left bg-bluePrimary border-redSecondary border-2 text-grayBackground'>
             <CardContent>
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-6'>

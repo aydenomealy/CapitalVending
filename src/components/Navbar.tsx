@@ -7,10 +7,11 @@ import MobileNav from "@/components/MobileNav";
 
 const Navbar = () => {
     return (
-        <div className='bg-white sticky z-50 top-0 inset-x-0 h-16'>
-            <header className='relative bg-white'>
-                <MaxWidthWrapper>
-                    <div className='border-b border-red-300'>
+        <div className='bg-bluePrimary sticky z-50 top-0 inset-x-0 h-16'>
+            <header className='relative bg-bluePrimary'>
+                <div className='border-b-4 border-redSecondary'>
+                    <MaxWidthWrapper>
+
                         <div className='flex h-24 items-center'>
                             <div className='ml-4 flex lg:ml-0'>
                                 <Link href='/'>
@@ -27,16 +28,16 @@ const Navbar = () => {
                             <div className='ml-auto flex items-center'>
                                 <div className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>
 
-                                    <div className='text-lg text-muted-foreground items-center justify-center'>
-                                         <Phone className='inline mr-3 text-red-600'/>
+                                    <div className='text-lg text-grayBackground items-center justify-center'>
+                                        <Phone className='inline mr-3 text-redSecondary'/>
                                         717-558-9921
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </MaxWidthWrapper>
+                    </MaxWidthWrapper>
+                </div>
             </header>
         </div>
     )
