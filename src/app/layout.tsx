@@ -26,7 +26,7 @@ export default function RootLayout({
           )}>
       <main className='relative flex flex-col min-h-screen'>
           <Navbar/>
-          <div className='flex-grow flex-1'>
+          <div className='flex-grow flex-1 bg-peachSecondary'>
               {children}
           </div>
           <Footer/>

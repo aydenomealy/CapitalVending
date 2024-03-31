@@ -15,7 +15,7 @@ const Footer = () => {
     ]
 
     return (
-        <footer className='bg-white flex-grow-0'>
+        <footer className='bg-peachSecondary flex-grow-0'>
             <MaxWidthWrapper>
                 <div>
                     {pathsToMinimize.includes(pathname) ? null : (
@@ -29,15 +29,15 @@ const Footer = () => {
                     {pathsToMinimize.includes(pathname) ? null : (
                         <div>
                             <div className='relative flex items-center px-6 py-6 sm:py-8 lg:mt-0'>
-                                <div className='absolute inset-0 overflow-hidden rounded-lg'>
+                                <div className='absolute inset-0 overflow-hidden rounded-lg border-4 border-redSecondary'>
                                     <div
                                         aria-hidden='true'
-                                        className='absolute bg-zinc-100 inset-0 bg-gradient-to-br bg-opacity-90'
+                                        className='absolute bg-bluePrimary inset-0 bg-gradient-to-br bg-opacity-90'
                                     />
                                 </div>
 
                                 <div className='text-center relative mx-auto max-w-sm'>
-                                    <h3 className='font-semibold text-gray-900'>
+                                    <h3 className='font-semibold text-grayBackground'>
                                         Supercharge your business
                                     </h3>
                                     <p className='mt-2 text-sm text-muted-foreground'>
@@ -45,7 +45,7 @@ const Footer = () => {
                                         Contact us today for services you can trust!{' '}
                                         <Link
                                             href='/sign-in?as=seller'
-                                            className='whitespace-nowrap font-medium text-black hover:text-zinc-900'>
+                                            className='whitespace-nowrap font-medium text-grayBackground hover:text-zinc-400'>
                                             Get started &rarr;
                                         </Link>
                                     </p>
