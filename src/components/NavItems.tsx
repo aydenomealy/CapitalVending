@@ -10,7 +10,7 @@ const NavItems = () => {
     return (
         <div className='flex gap-4 h-full items-center relative'>
             {NAV_ITEMS.map((item) => (
-                <Button asChild variant={activeIndex === item.num ? 'secondary' : 'ghost'}>
+                <Button key={item.value} asChild variant={activeIndex === item.num ? 'blue' : 'ghost'}>
                     <Link href={item.href} onClick={() => setActiveIndex(item.num)}>{item.name}</Link>
                 </Button>
             ))}

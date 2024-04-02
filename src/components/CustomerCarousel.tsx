@@ -30,7 +30,11 @@ const CustomerCarousel = () => {
                 <CarouselContent>
                     {CAROUSEL_IMAGES.map(item => (
                         <CarouselItem key={item.value} className="basis-1/3 lg:basis-1/4 relative h-20">
-                            <Image alt={item.name} src={item.imgSrc} fill objectFit="contain"/>
+                            <Image
+                                alt={item.name}
+                                src={item.imgSrc}
+                                fill
+                                style={{objectFit:"contain"}}/>
                         </CarouselItem>
 
                     ))}

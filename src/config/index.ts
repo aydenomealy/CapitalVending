@@ -31,7 +31,7 @@ export const PRODUCT_CATEGORIES = [
             {
                 name: "Cranes",
                 description: "",
-                imageSrc: "/machines/cranes.jpg"
+                imageSrc: "/machines/crane.jpg"
             },
             {
                 name: "ATMs",
@@ -41,7 +41,7 @@ export const PRODUCT_CATEGORIES = [
             {
                 name: "Prizes",
                 description: "",
-                imageSrc: "/machines/a.jpg"
+                imageSrc: "/machines/prize.jpg"
             },
         ]
     },
@@ -105,75 +105,75 @@ export const PRODUCTS = [
         name: "Arcade Machines",
         label: "arcade_machine" as const,
         description: "We have a wide selection of fully restored classic arcade machines. ",
-        imageSrc: "/nav/machines/arcade.jpg"
+        imageSrc: "/machines/arcade.jpg"
     },
     {
         name: "Pinball",
         label: "pinball" as const,
         description: "We have a wide selection of fully restored classic pinball machines.",
-        imageSrc: "/nav/machines/pinball.jpg"
+        imageSrc: "/machines/pinball.jpg"
     },
     {
         name: "Amusement Connect",
         label: "amusement_connect" as const,
         description: "Amusement Connect makes it easy to modernize any arcade by offering a card system. " +
             "Customers purchase a card at the kiosk, load it with money, and then they just tap to play.",
-        imageSrc: "/nav/machines/amusementConnect.jpg"
+        imageSrc: "/machines/amusementConnect.jpg"
     },
     {
         name: "Cranes",
         label: "cranes" as const,
         description: "",
-        imageSrc: "/nav/machines/cranes.jpg"
+        imageSrc: "/machines/crane.jpg"
     },
     {
         name: "Prizes",
         label: "prizes" as const,
         description: "",
-        imageSrc: "/nav/machines/a.jpg"
+        imageSrc: "/machines/prize.jpg"
     },
     {
         name: "Touch Tunes Jukebox",
         label: "touch_tunes_jukebox" as const,
         description: "Touch Tunes is the leader in jukebox systems. We install a professional surround sound system in your establishment.",
-        imageSrc: "/nav/machines/touchtunes.jpg"
+        imageSrc: "/machines/touchtunes.jpg"
     },
     {
         name: "Dart Boards",
         label: "dart_boards" as const,
         description: "",
-        imageSrc: "/nav/machines/darts.jpg"
+        imageSrc: "/machines/darts.jpg"
     },
     {
         name: "Pool Tables",
         label: "pool_tables" as const,
         description: "",
-        imageSrc: "/nav/machines/pool.jpg"
+        imageSrc: "/machines/pool.jpg"
     },
     {
         name: "ATM Service",
         label: "atm_service" as const,
         description: "We will provide, install, and maintain an ATM in your establishment. Its a completely hands off way to increase the revenue of your business.",
-        imageSrc: "/nav/machines/atm.jpg"
+        imageSrc: "/machines/atm.jpg"
     },
     {
         name: "Outdoor ATMs",
         label: "outdoor_atm" as const,
         description: "Dont have space for an ATM? We also provide outdoor atms that are secured in a solid steel enclosure." +
             " This allows customers to use the ATM 24/7 without even entering your establishment.",
-        imageSrc: "/nav/machines/outdoor.jpg"
+        imageSrc: "/machines/outdoor.jpg"
     },
     {
         name: "Merchant Loading",
         label: "merchant_loading" as const,
         description: "Want a little more involvement? We can provide you an ATM that you load yourself.",
-        imageSrc: "/nav/machines/atm2.jpg"
+        imageSrc: "/machines/atm2.jpg"
     },
     {
         name: "Event ATM's",
         label: "event_atm" as const,
         description: "We have a custom built ATM trailer perfect for providing atms to your event. Our remote monitoring system will make sure your event never runs out of cash.",
-        imageSrc: "/nav/machines/eventatm.jpg"
+        imageSrc: "/machines/eventatm.jpg"
     }
 ]
 

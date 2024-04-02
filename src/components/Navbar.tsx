@@ -7,15 +7,12 @@ import MobileNav from "@/components/MobileNav";
 
 const Navbar = () => {
     return (
-        <div className='bg-bluePrimary sticky z-50 top-0 inset-x-0 h-16'>
-            <header className='relative bg-bluePrimary'>
-                <div className='border-b-4 border-redSecondary'>
+        <div className='bg-blueRetro sticky z-50 top-0 inset-x-0 h-16'>
+            <header className='relative bg-blueRetro'>
+                <div className='border-b-4 border-redRetro'>
                     <MaxWidthWrapper>
-
                         <div className='flex h-24 items-center'>
-
                             <MobileNav/>
-
                             <div className='ml-4 flex lg:ml-0'>
                                 <Link href='/'>
                                     <Icons.logo className='h-20 w-20'/>
@@ -29,8 +26,8 @@ const Navbar = () => {
                             <div className='ml-auto flex items-center'>
                                 <div className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>
 
-                                    <div className='text-lg text-grayBackground items-center justify-center'>
-                                        <Phone className='inline mr-3 text-redSecondary'/>
+                                    <div className='text-lg text-grayRetro items-center justify-center'>
+                                        <Phone className='inline mr-3 text-redRetro'/>
                                         717-558-9921
                                     </div>
 
