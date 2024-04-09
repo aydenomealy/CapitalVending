@@ -6,9 +6,9 @@ import {Button, buttonVariants} from "@/components/ui/button";
 import {Drill, Joystick, Rabbit} from "lucide-react";
 import React from "react";
 import CustomerCarousel from "@/components/CustomerCarousel";
-import Image from "next/image"
+import Image from "next/image";
 import ProductsCards from "@/components/ProductsCards";
-import {motion as m} from "framer-motion"
+import {motion as m} from "framer-motion";
 
 const perks = [
     {
@@ -75,22 +75,26 @@ export default function Home() {
                         alt='Pool table background'
                         src='/backgrounds/poolbackground.jpg'
                         fill
-                        style={{objectFit:"cover"}}
+                        style={{objectFit: "cover"}}
                     />
                 </div>
             </div>
 
 
-
-            <section className='border-t-4 border-redRetro bg-blueRetro border-b-4 shadow-2xl'>
+            <section className='border-t-4 border-redRetro bg-blueRetro border-b-4 shadow-2xl overflow-hidden'>
                 <MaxWidthWrapper className='py-20'>
                     <div
                         className='grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0'>
-                        {perks.map((perk) => (
-                            <div key={perk.name}
-                                 className='overflow-hidden text-center md:flex md:item-start md:text-left lg:block lg:text-center'>
+                        {perks.map((perk, index) => (
+                            <m.div
+                                key={perk.name}
+                                animate={{y: 0}}
+                                initial={{y: "160%"}}
+                                transition={{delay: 0.5 + index/2, duration: 0.5}}
+                                className='overflow-hidden text-center md:flex md:item-start md:text-left lg:block lg:text-center'>
                                 <div className='md:flex-shrink-0 flex justify-center'>
-                                    <div className='h-16 w-16 flex items-center justify-center rounded-full bg-orangeRetro border-brownRetro border-2'>
+                                    <div
+                                        className='h-16 w-16 flex items-center justify-center rounded-full bg-orangeRetro border-brownRetro border-2'>
                                         {<perk.icon className='w-1/3 h-1/3 text-blueRetro'/>}
                                     </div>
                                 </div>
@@ -102,7 +106,7 @@ export default function Home() {
                                         {perk.description}
                                     </p>
                                 </div>
-                            </div>
+                            </m.div>
                         ))}
                     </div>
                 </MaxWidthWrapper>
