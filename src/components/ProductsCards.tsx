@@ -5,7 +5,7 @@ import {motion as m} from "framer-motion";
 
 const ProductsCards = () => {
     return (
-        <div className='grid grid-cols-3 h-full gap-10 px-10 py-12 drop-shadow-xl'>
+        <div className='grid sm:grid-cols-3 grid-cols-1 h-full gap-10 px-10 py-12 drop-shadow-xl'>
             {PRODUCTS.map((item) => (
                 <div key={item.label}
                      className="relative group rounded-lg overflow-hidden aspect-video even:border-redRetro odd:border-lightBlueRetro border-4">
@@ -16,7 +16,7 @@ const ProductsCards = () => {
                         className='object-cover object-center'
                     />
                     <div
-                        className='text-grayRetro font-outline-1 text-2xl font-bold absolute flex inset-0 justify-center items-end group-hover:hidden'>
+                        className='text-grayRetro font-outline-1 text-2xl sm:text-3xl font-bold absolute flex inset-0 justify-center items-end group-hover:hidden'>
                         {item.name}
                     </div>
                     <m.div

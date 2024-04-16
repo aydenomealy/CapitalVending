@@ -29,7 +29,8 @@ const perks = [
 ]
 export default function Home() {
     return (
-        <m.div initial={{opacity: 0}} animate={{opacity: 1}}
+        <m.div initial={{opacity: 0}}
+               animate={{opacity: 1}}
                transition={{duration: 0.75}}>
             <MaxWidthWrapper>
                 <div className='py-20 mx-auto text-center flex flex-col items-center max-w-5xl'>
@@ -37,7 +38,7 @@ export default function Home() {
                         <m.h1
                             animate={{y: 0}}
                             initial={{y: "115%"}}
-                            transition={{delay: 0.5, duration: 0.5}}
+                            transition={{delay: 0.25, duration: 0.5}}
                             className='mb-4 text-4xl font-bold tracking-light text-grey-700 sm:text-6xl'>
                             Quality
                             <span className='text-redRetro'> vending machine </span>
