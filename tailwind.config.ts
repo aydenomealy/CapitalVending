@@ -19,10 +19,10 @@ const config = {
     },
     extend: {
       colors: {
-        grayRetro: "#EEE2DE",
+        grayRetro: "#CFCFC4",
         blueRetro: "#183257",
         redRetro: "#DD5341",
-        peachRetro: "#F6DCAC",
+        peachRetro: "#FFF0DC",
         brownRetro: "#794A3A",
         lightBlueRetro: "#68C7C1",
         orangeRetro: "#F57F5B",

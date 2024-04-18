@@ -19,14 +19,6 @@ const Footer = () => {
             <MaxWidthWrapper>
                 <div>
                     {pathsToMinimize.includes(pathname) ? null : (
-                        <div className='pb-4 pt-8'>
-                            <div className='flex justify-center'>
-                                <Icons.logo className="h-12 w-auto"/>
-                            </div>
-                        </div>
-                    )}
-
-                    {pathsToMinimize.includes(pathname) ? null : (
                         <div>
                             <div className='relative flex items-center px-6 py-6 sm:py-8 lg:mt-0'>
                                 <div className='absolute inset-0 overflow-hidden rounded-lg border-4 border-redRetro'>
@@ -40,14 +32,9 @@ const Footer = () => {
                                     <h3 className='font-semibold text-grayRetro'>
                                         Supercharge your business
                                     </h3>
-                                    <p className='mt-2 text-sm text-muted-foreground'>
+                                    <p className='mt-2 text-sm text-orangeRetro'>
                                         Since 1962, we&apos;ve been providing superior vending machine services.
                                         Contact us today for services you can trust!{' '}
-                                        <Link
-                                            href='/sign-in?as=seller'
-                                            className='whitespace-nowrap font-medium text-grayRetro hover:text-zinc-400'>
-                                            Get started &rarr;
-                                        </Link>
                                     </p>
                                 </div>
                             </div>

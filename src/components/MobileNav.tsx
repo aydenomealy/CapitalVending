@@ -67,9 +67,9 @@ const MobileNav = () => {
                                         key={category.value}
                                         className='px-4 py-4'>
                                         <div className='-mb-px flex'>
-                                            <p className='text-gray-900 flex-1 whitespace-nowrap py-4 text-base font-medium'>
+                                            <p className='text-grayRetro flex-1 whitespace-nowrap py-4 text-base font-medium'>
                                                 <Button asChild
-                                                        variant={activeIndex === category.num ? 'secondary' : 'ghost'}>
+                                                        variant={activeIndex === category.num ? 'default' : 'secondary'}>
                                                     <Link href={category.href}
                                                           onClick={() => setActiveIndex(category.num)}>{category.name}</Link>
                                                 </Button>
@@ -81,8 +81,8 @@ const MobileNav = () => {
                         </div>
 
                         <div className='space-y-6 border-t border-gray-200 px-4 py-6'>
-                            <div className='flow-root text-lg text-muted-foreground items-center justify-center'>
-                                <Phone className='inline mr-3 text-red-900'/>
+                            <div className='text-grayRetro flow-root text-lg text-muted-foreground items-center justify-center'>
+                                <Phone className='inline mr-3 text-redRetro'/>
                                 717-558-9921
                             </div>
                         </div>

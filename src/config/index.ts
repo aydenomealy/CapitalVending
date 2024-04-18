@@ -117,7 +117,7 @@ export const PRODUCTS = [
         name: "Amusement Connect",
         label: "amusement_connect" as const,
         description: "Amusement Connect makes it easy to modernize any arcade by offering a card system. " +
-            "Customers purchase a card at the kiosk, load it with money, and then they just tap to play.",
+            "Customers purchase a card at the kiosk, load it with money, and then just tap to play.",
         imageSrc: "/machines/amusementConnect.jpg"
     },
     {
@@ -129,7 +129,7 @@ export const PRODUCTS = [
     {
         name: "Prizes",
         label: "prizes" as const,
-        description: "",
+        description: "We offer premium prizes that include toys and official merch from the latest trending topic. This keeps customers engaged and playing our games.",
         imageSrc: "/machines/prize.jpg"
     },
     {
@@ -147,7 +147,9 @@ export const PRODUCTS = [
     {
         name: "Pool Tables",
         label: "pool_tables" as const,
-        description: "",
+        description: "We offer the best pool table setups for your business. " +
+            "We provide everything you need from cues to triangles and even chalk. " +
+            "We use a precision tools to level the table perfectly.",
         imageSrc: "/machines/pool.jpg"
     },
     {
@@ -160,7 +162,7 @@ export const PRODUCTS = [
         name: "Outdoor ATMs",
         label: "outdoor_atm" as const,
         description: "Dont have space for an ATM? We also provide outdoor atms that are secured in a solid steel enclosure." +
-            " This allows customers to use the ATM 24/7 without even entering your establishment.",
+            " This allows customers to use the ATM 24/7 without entering your establishment.",
         imageSrc: "/machines/outdoor.jpg"
     },
     {
@@ -178,11 +180,6 @@ export const PRODUCTS = [
 ]
 
 export const CAROUSEL_IMAGES = [
-    {
-        name: "7-11 logo",
-        value: "711" as const,
-        imgSrc: "/scroller/711.png"
-    },
     {
         name: "Amusement Connect Logo",
         value: "amusementconnect" as const,
@@ -211,22 +208,12 @@ export const CAROUSEL_IMAGES = [
     {
         name: "Giant Logo",
         value: "Giant" as const,
-        imgSrc: "/scroller/giant.jpeg"
-    },
-    {
-        name: "Hershey Park Logo",
-        value: "HersheyPark" as const,
-        imgSrc: "/scroller/HersheyParkLogo.png"
+        imgSrc: "/scroller/giant.png"
     },
     {
         name: "Pipeline Logo",
         value: "Pipeline" as const,
         imgSrc: "/scroller/pipeline.png"
-    },
-    {
-        name: "Speedway Logo",
-        value: "Speedway" as const,
-        imgSrc: "/scroller/Speedway.png"
     },
     {
         name: "Stern Logo",
@@ -236,7 +223,7 @@ export const CAROUSEL_IMAGES = [
     {
         name: "TouchTunes Logo",
         value: "TouchTunes" as const,
-        imgSrc: "/scroller/touchtunes.jpg"
+        imgSrc: "/scroller/touchtunes.png"
     },
 ]
 
