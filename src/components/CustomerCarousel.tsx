@@ -7,8 +7,8 @@ import Image from "next/image";
 
 const CustomerCarousel = () => {
     return (
-        <div className='py-24'>
-            <h3 className='text-center mb-4 text-l font-bold tracking-light text-grey-700 sm:text-xl'>
+        <div className='pb-24'>
+            <h3 className='text-center mb-4 font-bold tracking-light text-grey-700 sm:text-xl'>
                 COMPANIES THAT TRUST US:
             </h3>
 

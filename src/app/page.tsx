@@ -36,7 +36,8 @@ export default function Home() {
         <m.div initial={{opacity: 0}}
                animate={{opacity: 1}}
                transition={{duration: 0.75}}>
-            <div className="relative w-full h-96 overflow-hidden" style={{borderBottomRightRadius: "100%", borderBottomLeftRadius: "100%"}}>
+            <div className="relative w-full h-96 overflow-hidden"
+                 style={{borderBottomRightRadius: "100%", borderBottomLeftRadius: "100%"}}>
                 <Image
                     alt='Retro Arcade Background'
                     src='/backgrounds/arcadeBackground.png'
@@ -46,7 +47,7 @@ export default function Home() {
                     animate={{y: 0}}
                     initial={{y: "115%"}}
                     transition={{delay: 0.5, duration: 0.75}}
-                    className='mb-4 text-3xl md:text-4xl lg:text-6xl font-bold tracking-light text-grey-700 absolute flex inset-0 justify-center items-center '>
+                    className='mb-4 text-3xl md:text-4xl lg:text-6xl font-bold tracking-light text-grey-700 absolute flex inset-0 justify-center items-center drop-shadow-lg'>
                     Quality&nbsp;
                     <span className='text-redRetro font-outline-2'> Vending Machine </span>
                     &nbsp;Services
@@ -73,40 +74,6 @@ export default function Home() {
                     </div>
                 </div>
             </MaxWidthWrapper>
-
-            <MaxWidthWrapper>
-                <ProductsCards/>
-            </MaxWidthWrapper>
-
-            <div
-                className='h-80 w-full relative my-44'
-                style={{
-                    clipPath: 'inset(0 0 0 0)',
-                }}
-            >
-                <div className='fixed h-full w-full sm:top-16 top-24'>
-                    <Image
-                        alt='Pool table background'
-                        src='/backgrounds/poolbackground.jpg'
-                        fill
-                        style={{objectFit: "cover"}}
-                    />
-                </div>
-
-                <div
-                    className='text-grayRetro leading-none tracking-tight absolute flex flex-col inset-0 justify-center items-center'>
-                    <h1 className='text-4xl md:text-6xl font-extrabold font-outline-2'>
-                        Level Up Your Business
-                    </h1>
-                    <h2 className='text-2xl md:text-3xl font-bold'>
-                        ────
-                        <span className="font-outline-1"> Partner with Capital Vending </span>
-                        ────
-                    </h2>
-                </div>
-
-            </div>
-
 
             <section className='border-t-4 border-redRetro bg-blueRetro border-b-4 shadow-2xl overflow-hidden'>
                 <MaxWidthWrapper className='py-20'>
@@ -139,6 +106,40 @@ export default function Home() {
                     </div>
                 </MaxWidthWrapper>
             </section>
+
+
+            <MaxWidthWrapper>
+                <ProductsCards/>
+            </MaxWidthWrapper>
+
+            <div
+                className='h-80 w-full relative my-44'
+                style={{
+                    clipPath: 'inset(0 0 0 0)',
+                }}
+            >
+                <div className='fixed h-full w-full sm:top-16 top-24'>
+                    <Image
+                        alt='Pool table background'
+                        src='/backgrounds/poolbackground.jpg'
+                        fill
+                        style={{objectFit: "cover"}}
+                    />
+                </div>
+
+                <div
+                    className='text-grayRetro leading-none tracking-tight absolute flex flex-col inset-0 justify-center items-center drop-shadow-lg'>
+                    <h1 className='text-4xl md:text-6xl font-extrabold font-outline-2'>
+                        Level Up Your Business
+                    </h1>
+                    <h2 className='text-2xl md:text-3xl font-bold'>
+                        ────
+                        <span className="font-outline-1"> Partner with Capital Vending </span>
+                        ────
+                    </h2>
+                </div>
+            </div>
+
             <CustomerCarousel/>
         </m.div>
     )
