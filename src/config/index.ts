@@ -252,12 +252,12 @@ export const CAREER_SCHEMA = z.object({
     }),
     resume: z
         .any()
-        .refine((files) => files?.length == 1, "Please upload your resume.")
-        .refine((files) => files?.[0]?.size <= 700000)
-        .refine(
-            (files) => ACCEPTED_FILE_TYPES.includes(files?.[0]?.type),
-            ".pdf, .docx, and .doc files are accepted."
-        ),
+        .refine((files) => files?.length == 1, {message: "Please upload your resume."})
+        // .refine((files) => console.log(files?.[0]?.type))
+        // .refine(
+        //     (files) => ACCEPTED_FILE_TYPES.includes(files?.[0]?.type),
+        //     ".pdf, .docx, and .doc files are accepted."
+        // ),
 })
 
 export const NAV_ITEMS = [

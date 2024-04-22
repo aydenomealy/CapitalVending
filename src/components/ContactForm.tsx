@@ -99,10 +99,6 @@ const ContactForm = () => {
                     </form>
                 </Form>
             </CardContent>
-            {/*<CardFooter>*/}
-
-            {/*    /!*<Button variant='ghost'>Clear</Button>*!/*/}
-            {/*</CardFooter>*/}
         </Card>
     )
 }
