@@ -49,7 +49,7 @@ export default function Home() {
                     transition={{delay: 0.5, duration: 0.75}}
                     className='mb-4 text-3xl md:text-4xl lg:text-6xl font-bold tracking-light text-grey-700 absolute flex inset-0 justify-center items-center drop-shadow-lg'>
                     Quality&nbsp;
-                    <span className='text-redRetro font-outline-2'> Vending Machine </span>
+                    <span className='text-redRetro font-outline-2'> Amusement </span>
                     &nbsp;Services
                 </m.h1>
             </div>
@@ -59,10 +59,10 @@ export default function Home() {
                     <div className='overflow-hidden p-1'>
 
                     </div>
-                    <p className='mb-6 text-lg max-w-prose text-brownRetro font-medium'>
-                        Capital Vending Company has been providing quality vending machine services to
-                        Harrisburg, Pennsylvania for over 50 years. We have built a reputation by our
-                        exceptional value, superior selection of machines as well as fast and friendly
+                    <p className='mb-6 md:text-2xl text-lg max-w-prose text-brownRetro font-medium'>
+                        Capital Vending Company has been providing quality amusement services to
+                        Harrisburg, Pennsylvania for over 50 years. We have built a strong reputation through our
+                        exceptional value, superior selection of machines, as well as fast and friendly
                         service. From coin-operated entertainment to rental equipment for big celebrations,
                         you&apos;ll be sure to find everything you need!
                     </p>
@@ -94,10 +94,10 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className='mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6'>
-                                    <h3 className='text-base font-medium text-grayRetro'>
+                                    <h3 className='md:text-lg text-base font-medium text-grayRetro'>
                                         {perk.name}
                                     </h3>
-                                    <p className='mt-3 text-sm text-orangeRetro'>
+                                    <p className='md:text-base mt-3 text-sm text-orangeRetro'>
                                         {perk.description}
                                     </p>
                                 </div>
@@ -140,7 +140,10 @@ export default function Home() {
                 </div>
             </div>
 
-            <CustomerCarousel/>
+            <MaxWidthWrapper>
+                <CustomerCarousel/>
+            </MaxWidthWrapper>
+
         </m.div>
     )
 }

@@ -1,4 +1,4 @@
-import {PRODUCTS} from "@/config";
+import {PRODUCTS2} from "@/config";
 import Image from "next/image";
 import {motion as m} from "framer-motion";
 import Link from "next/link";
@@ -7,13 +7,13 @@ import Link from "next/link";
 const ProductsCards = () => {
     return (
         <div className='grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7 pt-44 px-10 md:px-0 lg:px-10 drop-shadow-xl'>
-            {PRODUCTS.map((item, index) => (
+            {PRODUCTS2.map((item, index) => (
                 <Link key={item.label}
                       href={"/products/" + index}
                      className="relative group rounded-lg overflow-hidden aspect-video even:border-redRetro odd:border-orangeRetro border-4 hover:cursor-pointer">
                     <Image
                         alt={item.name}
-                        src={item.imageSrc}
+                        src={item.headerImg}
                         fill
                         className='object-cover object-center'
                     />

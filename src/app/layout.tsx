@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto_Flex } from "next/font/google";
 import "./globals.css";
 import {cn} from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto_Flex({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Capital Vending",
@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
           className={cn(
               "relative h-ful font-sans antialiased",
-              inter.className
+              roboto.className
           )}>
       <main className='relative flex flex-col min-h-screen'>
           <Navbar/>

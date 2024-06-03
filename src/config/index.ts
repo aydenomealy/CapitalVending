@@ -179,6 +179,91 @@ export const PRODUCTS = [
     }
 ]
 
+export const PRODUCTS2  = [
+    {
+        name: "Arcade Machines",
+        label: "arcade_machine" as const,
+        description: "We have a wide selection of fully restored classic arcade machines. ",
+        headerImg: "/machines/arcade.jpg",
+        subSections: [
+            {
+                name: "Pinball",
+                description: "We have a wide selection of fully restored classic pinball machines.",
+                imageSrc: "/machines/pinball.jpg"
+            },
+            {
+                name: "Amusement Connect",
+                description: "Amusement Connect makes it easy to modernize any arcade by offering a card system. " +
+                    "Customers purchase a card at the kiosk, load it with money, and then just tap to play.",
+                imageSrc: "/machines/amusementConnect.jpg"
+            },
+            {
+                name: "Cranes",
+                description: "",
+                imageSrc: "/machines/crane.jpg"
+            },
+            {
+                name: "Prizes",
+                description: "We offer premium prizes that include toys and official merch from the latest trending topic. This keeps customers engaged and playing our games.",
+                imageSrc: "/machines/prize.jpg"
+            },
+        ]
+    },
+    {
+        name: "Jukeboxes",
+        label: "touch_tunes_jukebox" as const,
+        description: "Touch Tunes is the leader in jukebox systems. We install a professional surround sound system in your establishment.",
+        headerImg: "/machines/touchtunes.jpg",
+        subSections: [
+            {
+                name: "TouchTunes Jukebox",
+                description: "We have a wide selection of fully restored classic pinball machines.",
+                imageSrc: "/machines/touchtunes.jpg"
+            },
+        ]
+    },
+    // {
+    //     name: "Dart Boards",
+    //     label: "dart_boards" as const,
+    //     description: "",
+    //     headerImg: "/machines/darts.jpg"
+    // },
+    // {
+    //     name: "Pool Tables",
+    //     label: "pool_tables" as const,
+    //     description: "We offer the best pool table setups for your business. " +
+    //         "We provide everything you need from cues to triangles and even chalk. " +
+    //         "We use a precision tools to level the table perfectly.",
+    //     imageSrc: "/machines/pool.jpg"
+    // },
+    {
+        name: "ATM Service",
+        label: "atm_service" as const,
+        description: "We will provide, install, and maintain an ATM in your establishment. " +
+            "We monitor our ATM 24/7, making sure it never runs out of money and minimizing downtime. " +
+            "It's a completely hands off way to increase the revenue of your business.",
+        headerImg: "/machines/atm.jpg",
+        subSections: [
+            {
+                name: "Outdoor ATMs",
+                description: "Dont have space for an ATM? We also offer outdoor atms that are secured in a solid steel weather-proof enclosure. " +
+                    "Outdoor ATMs allow customers to withdraw cash 24/7 without needing to enter your establishment.",
+                imageSrc: "/machines/outdoor.jpg"
+            },
+            {
+                name: "Merchant Loading",
+                description: "Want a little more involvement? We can provide you an ATM that you load yourself and all the necessary training to do so.",
+                imageSrc: "/machines/atm2.jpg"
+            },
+            {
+                name: "Event ATM's",
+                description: "We have a custom built ATM trailer perfect for providing atms to your event. With our remote monitoring system, your event will never run out of cash.",
+                imageSrc: "/machines/eventatm.jpg"
+            }
+        ]
+    }
+]
+
 export const CAROUSEL_IMAGES = [
     {
         name: "Amusement Connect Logo",
