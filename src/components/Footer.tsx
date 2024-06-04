@@ -1,47 +1,13 @@
 'use client'
 
-import {usePathname} from "next/navigation";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import {Icons} from './Icons'
 import Link from "next/link";
 
 const Footer = () => {
-    const pathname = usePathname()
-    const pathsToMinimize = [
-        '/about',
-        '/contact',
-        '/careers',
-        '/products'
-    ]
 
     return (
-        <footer className='bg-peachRetro flex-grow-0'>
+        <footer className='bg-blueRetro border-t-4 border-redRetro flex-grow-0'>
             <MaxWidthWrapper>
-                <div>
-                    {pathsToMinimize.includes(pathname) ? null : (
-                        <div>
-                            <div className='relative flex items-center px-6 py-6 sm:py-8 lg:mt-0'>
-                                <div className='absolute inset-0 overflow-hidden rounded-lg border-4 border-redRetro'>
-                                    <div
-                                        aria-hidden='true'
-                                        className='absolute bg-blueRetro inset-0 bg-opacity-90'
-                                    />
-                                </div>
-
-                                <div className='text-center relative mx-auto max-w-sm'>
-                                    <h3 className='font-semibold text-grayRetro'>
-                                        Supercharge your business
-                                    </h3>
-                                    <p className='mt-2 text-sm text-orangeRetro'>
-                                        Since 1962, we&apos;ve been providing superior vending machine services.
-                                        Contact us today for services you can trust!{' '}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    )}
-                </div>
-
                 <div className='py-10 md:flex md:items-center md:justify-between'>
                     <div className='text-center md:text-left'>
                         <p className='text-sm text-muted-foreground'>

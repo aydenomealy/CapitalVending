@@ -10,7 +10,7 @@ const ProductsCards = () => {
             {PRODUCTS2.map((item, index) => (
                 <Link key={item.label}
                       href={"/products/" + index}
-                     className="relative group rounded-lg overflow-hidden aspect-video even:border-redRetro odd:border-orangeRetro border-4 hover:cursor-pointer">
+                     className="relative group rounded-lg overflow-hidden aspect-video border-grayRetro border-2 hover:cursor-pointer">
                     <Image
                         alt={item.name}
                         src={item.headerImg}

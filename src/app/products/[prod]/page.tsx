@@ -1,8 +1,7 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import {PRODUCTS, PRODUCTS2} from "@/config";
+import {PRODUCTS2} from "@/config";
 import React from "react";
 import Image from "next/image";
-import {motion as m} from "framer-motion";
 import {Card, CardContent} from "@/components/ui/card";
 
 export default function Page({params}: { params: { prod: number } }) {
@@ -27,7 +26,7 @@ export default function Page({params}: { params: { prod: number } }) {
 
                 {PRODUCTS2[params.prod].subSections.map((prod, index) => (
                     <Card key={prod.name}
-                          className='sm:text-base text-sm bg-peachRetroOld border-peachRetroOld border-2 mb-5 group shadow-lg'>
+                          className='sm:text-base text-sm bg-peachRetroOld border-grayRetro border-2 mb-5 group shadow-lg'>
                         <CardContent
                             className='mt-6 pr-3'>
                             <div className='grid sm:grid-cols-3 h-full grid-cols-2'>

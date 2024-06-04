@@ -26,7 +26,7 @@ export default function Home() {
 
 
             <MaxWidthWrapper>
-                <div className='overflow-hidden'>
+                <div className='overflow-hidden pb-16'>
                     <div className='pt-10 pb-10 mx-auto text-center flex flex-col items-center max-w-3xlgit '>
                         <p className='mt-6 max-w-prose text-brownRetro text-lg font-medium'>
                             Choose from our large selection of coin-operated games, jukeboxes, vending machines and so
@@ -42,7 +42,7 @@ export default function Home() {
 
                     <m.div
                         animate={{y: 0}}
-                        initial={{y: "100%"}}
+                        initial={{y: "110%"}}
                         transition={{delay: 0.75, duration: 0.5}}
                         className='mx-auto flex flex-col items-center max-w-4xl overflow-hidden'>
                         <ContactForm/>

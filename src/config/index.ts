@@ -228,14 +228,32 @@ export const PRODUCTS2  = [
     //     description: "",
     //     headerImg: "/machines/darts.jpg"
     // },
-    // {
-    //     name: "Pool Tables",
-    //     label: "pool_tables" as const,
-    //     description: "We offer the best pool table setups for your business. " +
-    //         "We provide everything you need from cues to triangles and even chalk. " +
-    //         "We use a precision tools to level the table perfectly.",
-    //     imageSrc: "/machines/pool.jpg"
-    // },
+    {
+        name: "Pool Tables",
+        label: "pool_tables" as const,
+        description: "We offer the best pool table setups for your business. " +
+            "We provide everything you need from cues to triangles and even chalk. " +
+            "We use a precision tools to level the table perfectly.",
+        headerImg: "/machines/pool.jpg",
+        subSections: [
+            {
+                name: "Premium Pool tables",
+                description: "We have a wide selection of fully restored classic pinball machines.",
+                imageSrc: "/machines/touchtunes.jpg"
+            },
+            {
+                name: "Pool Tournaments",
+                description: "We can provide pool tables for events.",
+                imageSrc: "/machines/touchtunes.jpg"
+            },
+            {
+                name: "Proper Maintenance",
+                description: "Our pool tables are professionally re-felted and leveled to give your players a premium experience.",
+                imageSrc: "/machines/touchtunes.jpg"
+            }
+        ]
+    },
+
     {
         name: "ATM Service",
         label: "atm_service" as const,
