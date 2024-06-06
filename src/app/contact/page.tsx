@@ -4,25 +4,13 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import ContactForm from "@/components/ContactForm";
 import React from "react";
 import {motion as m} from "framer-motion";
-import Image from "next/image";
+import Banner from "@/components/Banner";
 
 export default function Home() {
     return (<div>
-            <div className="relative w-full h-96 overflow-hidden"
-                 style={{borderBottomRightRadius: "100%", borderBottomLeftRadius: "100%"}}>
-                <Image
-                    alt='Retro Arcade Background'
-                    src='/backgrounds/arcadeBackground3.jpg'
-                    fill
-                    style={{objectFit: "cover"}}/>
-                <m.h1
-                    animate={{y: 0}}
-                    initial={{y: "115%"}}
-                    transition={{delay: 0.25, duration: 0.75}}
-                    className='mb-4 text-3xl md:text-4xl lg:text-6xl font-bold font-outline-2 text-redRetro absolute flex inset-0 justify-center items-center drop-shadow-lg'>
-                    Contact Us
-                </m.h1>
-            </div>
+            <Banner imgSrc='/backgrounds/arcadeBackground3.jpg'>
+                Contact Us
+            </Banner>
 
 
             <MaxWidthWrapper>

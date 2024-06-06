@@ -383,15 +383,26 @@ export const NAV_ITEMS = [
         num: 2
     },
     {
-        name: "Products & Services",
-        value: "products" as const,
-        href: "/products",
-        num: 3
-    },
-    {
         name: "Gallery",
         value: "gallery" as const,
         href: "/gallery",
-        num: 4
+        num: 3
     },
+]
+
+export const GALLERY = [
+    {
+        name: "The Barn Resort",
+        value: "barnResort" as const,
+        imgSrc: ["/gallery/barnResort/BarnResort1.jpg", "/gallery/barnResort/BarnResort2.jpg", "/gallery/barnResort/BarnResort3.jpg",
+            "/gallery/barnResort/BarnResort4.jpg", "/gallery/barnResort/BarnResort5.jpg", "/gallery/barnResort/BarnResort6.jpg", "/gallery/barnResort/BarnResort7.jpg",
+            "/gallery/barnResort/BarnResort8.jpg", "/gallery/barnResort/BarnResort9.jpg"]
+    },
+    {
+        name: "Hershey Lodge",
+        value: "barnResort" as const,
+        imgSrc: ["/gallery/hersheyLodge/HersheyLodge (1).jpg", "/gallery/hersheyLodge/HersheyLodge (2).jpg", "/gallery/hersheyLodge/HersheyLodge (3).jpg",
+            "/gallery/hersheyLodge/HersheyLodge (4).jpg", "/gallery/hersheyLodge/HersheyLodge (5).jpg", "/gallery/hersheyLodge/HersheyLodge (6).jpg",
+            "/gallery/hersheyLodge/HersheyLodge (7).jpg"]
+    }
 ]

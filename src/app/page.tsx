@@ -9,6 +9,7 @@ import CustomerCarousel from "@/components/CustomerCarousel";
 import Image from "next/image";
 import ProductsCards from "@/components/ProductsCards";
 import {motion as m, useInView} from "framer-motion";
+import Banner from "@/components/Banner";
 
 const perks = [
     {
@@ -36,29 +37,14 @@ export default function Home() {
         <m.div initial={{opacity: 0}}
                animate={{opacity: 1}}
                transition={{duration: 0.75}}>
-            <div className="relative w-full h-96 overflow-hidden shadow-lg border-grayRetro border-b-4"
-                 style={{borderBottomRightRadius: "100%", borderBottomLeftRadius: "100%"}}>
-                <Image
-                    alt='Retro Arcade Background'
-                    src='/backgrounds/arcadeBackground.png'
-                    fill
-                    style={{objectFit: "cover"}}/>
-                <m.h1
-                    animate={{y: 0}}
-                    initial={{y: "115%"}}
-                    transition={{delay: 0.5, duration: 0.75}}
-                    className='mb-4 text-3xl md:text-4xl lg:text-6xl font-bold tracking-light text-grey-700 absolute flex inset-0 justify-center items-center drop-shadow-lg'>
-                    Quality&nbsp;
-                    <span className='text-redRetro font-outline-2'> Amusement </span>
-                    &nbsp;Services
-                </m.h1>
-            </div>
+            <Banner imgSrc='/backgrounds/arcadeBackground.png'>
+                Quality&nbsp;
+                <span className='text-redRetro font-outline-2'> Amusement </span>
+                &nbsp;Services
+            </Banner>
 
             <MaxWidthWrapper>
                 <div className='pt-10 pb-44 mx-auto text-center flex flex-col items-center max-w-5xl'>
-                    <div className='overflow-hidden p-1'>
-
-                    </div>
                     <p className='mb-6 md:text-2xl text-lg max-w-prose text-brownRetro font-medium'>
                         Capital Vending Company has been providing quality amusement services to
                         Harrisburg, Pennsylvania for over 50 years. We have built a strong reputation through our
@@ -68,9 +54,9 @@ export default function Home() {
                     </p>
                     <div className='flex flex-col sm:flex-row gap-4 mt-6'>
                         <Link href='/contact' className={buttonVariants()}>Contact us today</Link>
-                        <Button asChild variant='secondary'>
-                            <Link href='/products'>Products & Services &rarr;</Link>
-                        </Button>
+                        {/*<Button asChild variant='secondary'>*/}
+                        {/*    <Link href='/products'>Products & Services &rarr;</Link>*/}
+                        {/*</Button>*/}
                     </div>
                 </div>
             </MaxWidthWrapper>

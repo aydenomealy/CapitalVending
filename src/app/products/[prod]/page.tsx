@@ -3,24 +3,16 @@ import {PRODUCTS2} from "@/config";
 import React from "react";
 import Image from "next/image";
 import {Card, CardContent} from "@/components/ui/card";
+import Banner from "@/components/Banner";
 
 export default function Page({params}: { params: { prod: number } }) {
     return (<>
-            <div className="relative w-full h-96 overflow-hidden shadow-md"
-                 style={{borderBottomRightRadius: "100%", borderBottomLeftRadius: "100%"}}>
-                <Image
-                    alt='Product Image'
-                    src={PRODUCTS2[params.prod].headerImg}
-                    fill
-                    style={{objectFit: "cover"}}/>
-                <h1
-                    className='mb-4 text-3xl md:text-4xl lg:text-6xl font-bold tracking-light text-grey-700 absolute flex inset-0 justify-center items-center drop-shadow-lg'>
-                    {PRODUCTS2[params.prod].name}
-                </h1>
-            </div>
+            <Banner imgSrc={PRODUCTS2[params.prod].headerImg}>
+                {PRODUCTS2[params.prod].name}
+            </Banner>
 
             <MaxWidthWrapper className='py-20 items-center'>
-                <div className='font-medium text-brownRetro md:text-2xl text-lg pb-24'>
+                <div className='font-medium text-brownRetro text-center md:text-2xl text-lg pb-24'>
                     {PRODUCTS2[params.prod].description}
                 </div>
 
