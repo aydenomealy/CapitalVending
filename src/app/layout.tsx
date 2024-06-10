@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Roboto_Flex } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import {cn} from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
-const roboto = Roboto_Flex({ subsets: ["latin"] });
+const josefinSans = Noto_Sans({subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Capital Vending",
@@ -22,12 +23,13 @@ export default function RootLayout({
       <body
           className={cn(
               "relative h-ful font-sans antialiased",
-              roboto.className
+              josefinSans.className
           )}>
       <main className='relative flex flex-col min-h-screen'>
           <Navbar/>
           <div className='flex-grow flex-1 bg-peachRetro'>
               {children}
+              <SpeedInsights/>
           </div>
           <Footer/>
       </main>

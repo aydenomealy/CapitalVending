@@ -1,6 +1,5 @@
 import {PRODUCTS2} from "@/config";
 import Image from "next/image";
-import {motion as m} from "framer-motion";
 import Link from "next/link";
 
 
@@ -10,26 +9,22 @@ const ProductsCards = () => {
             {PRODUCTS2.map((item, index) => (
                 <Link key={item.label}
                       href={"/products/" + index}
-                     className="relative group rounded-lg overflow-hidden aspect-video border-grayRetro border-2 hover:cursor-pointer">
+                     className="relative rounded-lg overflow-hidden aspect-video border-grayRetro border-2 hover:cursor-pointer">
                     <Image
                         alt={item.name}
                         src={item.headerImg}
                         fill
+                        placeholder="blur"
+                        blurDataURL={item.headerImg}
                         className='object-cover object-center'
                     />
                     <div
                         className='text-grayRetro font-outline-1 text-2xl lg:text-3xl font-extrabold absolute flex inset-0 justify-center items-end drop-shadow-2xl'>
                         {item.name}
                     </div>
-                    <m.div
-                        initial={{opacity: 0}}
-                        whileHover={{
-                            opacity: .4,
-                            transition: {duration: 0.2}
-                        }}
-                        className=" bg-black bg-opacity-70 absolute inset-0 text-grayRetro p-4 text-lg md:text-sm lg:text-lg">
-
-                    </m.div>
+                    <div
+                        className="transition-colors duration-200 ease-in-out hover:bg-black hover:bg-opacity-50 absolute inset-0 ">
+                    </div>
                 </Link>
             ))}
         </div>

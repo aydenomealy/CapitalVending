@@ -1,7 +1,4 @@
-'use client'
-
 import Image from "next/image";
-import {motion as m} from "framer-motion";
 import React, {ReactNode} from "react";
 
 const Banner = ({
@@ -16,15 +13,15 @@ const Banner = ({
             <Image
                 alt='Retro Arcade Background'
                 src={imgSrc}
+                priority={true}
+                placeholder="blur"
+                blurDataURL={imgSrc}
                 fill
                 style={{objectFit: "cover"}}/>
-            <m.h1
-                animate={{y: 0}}
-                initial={{y: "115%"}}
-                transition={{delay: 0.5, duration: 0.75}}
+            <h1
                 className='mb-4 text-3xl md:text-4xl lg:text-6xl font-bold tracking-light text-grey-700 absolute flex inset-0 justify-center items-center drop-shadow-lg'>
                 {children}
-            </m.h1>
+            </h1>
         </div>
 }
 

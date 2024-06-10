@@ -1,5 +1,3 @@
-"use client"
-
 import {Carousel, CarouselContent, CarouselItem} from "./ui/carousel"
 import AutoScroll from "embla-carousel-auto-scroll";
 import {CAROUSEL_IMAGES} from "@/config";
@@ -7,10 +5,10 @@ import Image from "next/image";
 
 const CustomerCarousel = () => {
     return (
-        <div className='mb-24 bg-peachRetroOld rounded-3xl p-5 pt-0 shadow-md'>
-            <div className="mx-auto w-1/3 pt-1 px-6 mb-4 overflow-hidden shadow-md bg-peachRetro"
+        <div className='mb-24 relative bg-peachRetroOld rounded-3xl p-5 pt-0 shadow-md border-2 border-grayRetro'>
+            <div className="mx-auto xl:w-1/3 md:w-1/2 w-2/3 pt-1 px-6 mb-4 bg-peachRetro border-2 border-t-0 border-grayRetro absolute left-0 right-0 -top-0.5 "
                  style={{borderBottomRightRadius: "100%", borderBottomLeftRadius: "100%"}}>
-                <h3 className='text-center mb-4 font-bold tracking-light text-grey-700 sm:text-xl'>
+                <h3 className='text-center mb-4 font-bold tracking-light text-grey-700 xl:text-xl lg:text-lg text-base'>
                     COMPANIES THAT TRUST US:
                 </h3>
             </div>
@@ -28,7 +26,7 @@ const CustomerCarousel = () => {
                         stopOnInteraction: false
                     })
                 ]}
-                className='h-24 mx-auto'
+                className='h-24 mx-auto mt-14'
             >
                 <CarouselContent>
                     {CAROUSEL_IMAGES.map(item => (

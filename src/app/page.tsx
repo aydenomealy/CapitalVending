@@ -2,7 +2,7 @@
 
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Link from "next/link";
-import {Button, buttonVariants} from "@/components/ui/button";
+import { buttonVariants} from "@/components/ui/button";
 import {Drill, Joystick, Rabbit} from "lucide-react";
 import React, {useRef} from "react";
 import CustomerCarousel from "@/components/CustomerCarousel";
@@ -76,7 +76,7 @@ export default function Home() {
                                 <div className='md:flex-shrink-0 flex justify-center'>
                                     <div
                                         className='h-16 w-16 flex items-center justify-center rounded-full bg-orangeRetro border-blueRetro border-2'>
-                                        {<perk.icon className='w-1/3 h-1/3 text-blueRetro '/>}
+                                        {<perk.icon className='w-1/3 h-1/3 text-blueRetro'/>}
                                     </div>
                                 </div>
                                 <div className='mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6'>
@@ -108,9 +108,10 @@ export default function Home() {
                     <Image
                         alt='Pool table background'
                         src='/backgrounds/poolbackground.jpg'
+                        placeholder="blur"
+                        blurDataURL="data:..."
                         fill
                         style={{objectFit: "cover"}}
-                        className=''
                     />
                 </div>
 

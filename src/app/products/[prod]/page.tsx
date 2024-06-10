@@ -28,6 +28,8 @@ export default function Page({params}: { params: { prod: number } }) {
                                         src={prod.imageSrc}
                                         alt='product catagory image'
                                         fill
+                                        placeholder="blur"
+                                        blurDataURL={prod.imageSrc}
                                         className='object-cover object-center'
                                     />
                                 </div>

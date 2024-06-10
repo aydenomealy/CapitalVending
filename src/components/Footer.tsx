@@ -1,12 +1,10 @@
-'use client'
-
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Link from "next/link";
 
 const Footer = () => {
 
     return (
-        <footer className='bg-blueRetro border-t-4 border-redRetro flex-grow-0'>
+        <footer className='bg-blueRetro border-t-2 border-redRetro flex-grow-0'>
             <MaxWidthWrapper>
                 <div className='py-10 md:flex md:items-center md:justify-between'>
                     <div className='text-center md:text-left'>

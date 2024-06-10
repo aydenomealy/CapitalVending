@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <div className='bg-blueRetro sticky z-50 top-0 inset-x-0 h-16'>
             <header className='relative bg-blueRetro'>
-                <div className='border-b-4 border-redRetro'>
+                <div className='border-b-2 border-redRetro'>
                     <MaxWidthWrapper>
                         <div className='flex h-24 items-center'>
                             <MobileNav/>
