@@ -11,7 +11,7 @@ const ProductsCards = () => {
                       href={"/products/" + index}
                      className="relative rounded-lg overflow-hidden aspect-video border-grayRetro border-2 hover:cursor-pointer">
                     <Image
-                        alt={item.name}
+                        alt={item.name + " image"}
                         src={item.headerImg}
                         fill
                         placeholder="blur"

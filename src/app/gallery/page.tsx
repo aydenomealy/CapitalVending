@@ -5,7 +5,7 @@ import Banner from "@/components/Banner";
 
 export default function Page() {
     return (<div>
-            <Banner imgSrc='/backgrounds/arcadeBackground.png'>
+            <Banner imgSrc='/backgrounds/arcadeBackground.webp'>
                 Gallery
             </Banner>
 

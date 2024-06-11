@@ -34,6 +34,7 @@ const MobileNav = () => {
     if (!isOpen)
         return (
             <button
+                aria-label='Navigation Menu'
                 type='button'
                 onClick={() => setIsOpen(true)}
                 className='lg:hidden relative -m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400'>

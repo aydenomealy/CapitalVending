@@ -4,7 +4,6 @@ import "./globals.css";
 import {cn} from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const josefinSans = Noto_Sans({subsets: ["latin"] });
 
@@ -29,7 +28,6 @@ export default function RootLayout({
           <Navbar/>
           <div className='flex-grow flex-1 bg-peachRetro'>
               {children}
-              <SpeedInsights/>
           </div>
           <Footer/>
       </main>

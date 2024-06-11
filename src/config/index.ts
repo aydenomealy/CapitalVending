@@ -184,28 +184,28 @@ export const PRODUCTS2  = [
         name: "Arcade Machines",
         label: "arcade_machine" as const,
         description: "We have a wide selection of fully restored classic arcade machines. ",
-        headerImg: "/machines/arcade.jpg",
+        headerImg: "/machines/arcade.webp",
         subSections: [
             {
                 name: "Pinball",
                 description: "We have a wide selection of fully restored classic pinball machines.",
-                imageSrc: "/machines/pinball.jpg"
+                imageSrc: "/machines/pinball.webp"
             },
             {
                 name: "Amusement Connect",
                 description: "Amusement Connect makes it easy to modernize any arcade by offering a card system. " +
                     "Customers purchase a card at the kiosk, load it with money, and then just tap to play.",
-                imageSrc: "/machines/amusementConnect.jpg"
+                imageSrc: "/machines/amusementConnect.webp"
             },
             {
                 name: "Cranes",
                 description: "",
-                imageSrc: "/machines/crane.jpg"
+                imageSrc: "/machines/crane.webp"
             },
             {
                 name: "Prizes",
                 description: "We offer premium prizes that include toys and official merch from the latest trending topic. This keeps customers engaged and playing our games.",
-                imageSrc: "/machines/prize.jpg"
+                imageSrc: "/machines/prize.webp"
             },
         ]
     },
@@ -213,12 +213,12 @@ export const PRODUCTS2  = [
         name: "Jukeboxes",
         label: "touch_tunes_jukebox" as const,
         description: "Touch Tunes is the leader in jukebox systems. We install a professional surround sound system in your establishment.",
-        headerImg: "/machines/touchtunes.jpg",
+        headerImg: "/machines/touchtunes.webp",
         subSections: [
             {
                 name: "TouchTunes Jukebox",
                 description: "We have a wide selection of fully restored classic pinball machines.",
-                imageSrc: "/machines/touchtunes.jpg"
+                imageSrc: "/machines/touchtunes.webp"
             },
         ]
     },
@@ -226,7 +226,7 @@ export const PRODUCTS2  = [
     //     name: "Dart Boards",
     //     label: "dart_boards" as const,
     //     description: "",
-    //     headerImg: "/machines/darts.jpg"
+    //     headerImg: "/machines/darts.webp"
     // },
     {
         name: "Pool Tables",
@@ -234,22 +234,22 @@ export const PRODUCTS2  = [
         description: "We offer the best pool table setups for your business. " +
             "We provide everything you need from cues to triangles and even chalk. " +
             "We use a precision tools to level the table perfectly.",
-        headerImg: "/machines/pool.jpg",
+        headerImg: "/machines/pool.webp",
         subSections: [
             {
                 name: "Premium Pool tables",
                 description: "We have a wide selection of fully restored classic pinball machines.",
-                imageSrc: "/machines/touchtunes.jpg"
+                imageSrc: "/machines/touchtunes.webp"
             },
             {
                 name: "Pool Tournaments",
                 description: "We can provide pool tables for events.",
-                imageSrc: "/machines/touchtunes.jpg"
+                imageSrc: "/machines/touchtunes.webp"
             },
             {
                 name: "Proper Maintenance",
                 description: "Our pool tables are professionally re-felted and leveled to give your players a premium experience.",
-                imageSrc: "/machines/touchtunes.jpg"
+                imageSrc: "/machines/touchtunes.webp"
             }
         ]
     },
@@ -260,23 +260,23 @@ export const PRODUCTS2  = [
         description: "We will provide, install, and maintain an ATM in your establishment. " +
             "We monitor our ATM 24/7, making sure it never runs out of money and minimizing downtime. " +
             "It's a completely hands off way to increase the revenue of your business.",
-        headerImg: "/machines/atm.jpg",
+        headerImg: "/machines/atm.webp",
         subSections: [
             {
                 name: "Outdoor ATMs",
                 description: "Dont have space for an ATM? We also offer outdoor atms that are secured in a solid steel weather-proof enclosure. " +
                     "Outdoor ATMs allow customers to withdraw cash 24/7 without needing to enter your establishment.",
-                imageSrc: "/machines/outdoor.jpg"
+                imageSrc: "/machines/outdoor.webp"
             },
             {
                 name: "Merchant Loading",
                 description: "Want a little more involvement? We can provide you an ATM that you load yourself and all the necessary training to do so.",
-                imageSrc: "/machines/atm2.jpg"
+                imageSrc: "/machines/atm2.webp"
             },
             {
                 name: "Event ATM's",
                 description: "We have a custom built ATM trailer perfect for providing atms to your event. With our remote monitoring system, your event will never run out of cash.",
-                imageSrc: "/machines/eventatm.jpg"
+                imageSrc: "/machines/eventatm.webp"
             }
         ]
     }

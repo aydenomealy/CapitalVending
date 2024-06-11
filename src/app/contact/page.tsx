@@ -5,7 +5,7 @@ import Banner from "@/components/Banner";
 
 export default function Home() {
     return (<div>
-            <Banner imgSrc='/backgrounds/arcadeBackground3.jpg'>
+            <Banner imgSrc='/backgrounds/arcadeBackground3.webp'>
                 Contact Us
             </Banner>
 
