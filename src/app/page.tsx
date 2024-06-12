@@ -2,7 +2,7 @@
 
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Link from "next/link";
-import {buttonVariants} from "@/components/ui/button";
+import {Button, buttonVariants} from "@/components/ui/button";
 import {Drill, Joystick, Rabbit} from "lucide-react";
 import {useRef} from "react";
 import CustomerCarousel from "@/components/CustomerCarousel";
@@ -52,9 +52,9 @@ export default function Home() {
                     </p>
                     <div className='flex flex-col sm:flex-row gap-4 mt-6'>
                         <Link href='/contact' className={buttonVariants()}>Contact us today</Link>
-                        {/*<Button asChild variant='secondary'>*/}
-                        {/*    <Link href='/products'>Products & Services &rarr;</Link>*/}
-                        {/*</Button>*/}
+                        <Button asChild variant='secondary'>
+                            <Link href='/gallery'>Check out our work &rarr;</Link>
+                        </Button>
                     </div>
                 </div>
             </MaxWidthWrapper>

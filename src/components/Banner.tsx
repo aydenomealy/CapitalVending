@@ -16,6 +16,8 @@ const Banner = ({
                 alt='Retro Arcade Background'
                 src={imgSrc}
                 priority={true}
+                placeholder="blur"
+                blurDataURL="data:..."
                 fill
                 style={{objectFit: "cover"}}
             />
