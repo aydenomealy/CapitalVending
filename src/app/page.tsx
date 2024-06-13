@@ -35,7 +35,7 @@ export default function Home() {
 
     return (
         <div>
-            <Banner imgSrc='/backgrounds/arcadeBackground.webp' blurURL='data:image/webp;base64,UklGRlwEAABXRUJQVlA4WAoAAAAgAAAAEgEAnAAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggbgIAADAXAJ0BKhMBnQA+7W6uUzorriKnM5pbQB2JZW7gANmC4EF2tTQO/v7bawGPKphWr0mguBuECibgvNYBsYHpaRCKUGhWo6QiQpYgbbzAgxfMyYTbi/7rQYahee4IjqBx7FRhk2N4OZpSiOIW4mKMMv2pmsjvPjsaGHDNbNrFY8+tjVK2xz5qHfsln2uqcF0XxgouDpNaNApZYTBsSbJkJ61MjndBR5HPUgksAWgHmBdfVStsIbIGswbzJYyhEKPI554AAP7urfOVQnuU25eSwHyX9XiuxgNdpKSjI3bFNmax/ydnNT8Kvw1FIPQu5FpDKSRcSumWgKCDrZh09bKtWeq7idW8cbh+7e/XvfI9wGhIn2aM5k+7ifhH3ngbqliGjPY6RtdtAi1LWfp8bZRZDX0TkvYWKSbaJ9pVaabHBXhFYAwtaFD9VzDiX06caQ6qgUeCzLBm+BkQuOLgN/DKo0ZsSEbjlvCgYyQCb1+fiZ4tRvBZxe11H6m2FBPx1/wlIfs+kuDsU2T7wmsV6uS+Meuo5+CjjzPDPjJu8DEXCuknabWREaLyIwnCB/MlI/COSD2aJZ9w9MWPn3nuplS6x4ZcS4fa3GaCVTgu7FEqOGCxL+37g+GUGC092HY2vcmt9dDiyxd3jEychgx68ovtBotexIGORFpgvoAG02KMydvaJO2nEvCjmsJE8h94xUDkiaZGw/joIWpQogAA6ZmbR3QjC6KlFVjrk72Ujwgiki3QyHqNEADfqfzghueqwXPytKCZLa/U98WtvkcQAAkUaSTpbNGteqjOhRycNwQa4Jezx8g/kmx21RIAAAAAAAA='>
+            <Banner imgSrc='/backgrounds/arcadeBackground.webp'>
                 Quality&nbsp;
                 <span className='text-redRetro font-outline-2'> Amusement </span>
                 &nbsp;Services
@@ -116,10 +116,10 @@ export default function Home() {
 
                 <div
                     className='text-grayRetro tracking-tight absolute flex flex-col inset-0 justify-center items-center border-t-2 border-b-2 border-grayRetro'>
-                    <h1 className='text-4xl md:text-6xl font-extrabold font-outline-2'>
+                    <h1 className='text-3xl sm:text-4xl md:text-6xl font-extrabold font-outline-2'>
                         Level Up Your Business
                     </h1>
-                    <h2 className='text-2xl md:text-3xl font-bold'>
+                    <h2 className='text-xl sm:text-2xl md:text-3xl font-bold'>
                         ────
                         <span className="font-outline-1"> Partner with Capital Vending </span>
                         ────

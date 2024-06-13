@@ -5,7 +5,7 @@ import {cn} from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const josefinSans = Noto_Sans({subsets: ["latin"] });
+const notoSans = Noto_Sans({subsets: ["latin"], style: "normal", display: "swap" });
 
 export const metadata: Metadata = {
   title: "Capital Vending",
@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
           className={cn(
               "relative h-ful font-sans antialiased",
-              josefinSans.className
+              notoSans.className
           )}>
       <main className='relative flex flex-col min-h-screen'>
           <Navbar/>

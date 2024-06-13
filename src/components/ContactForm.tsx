@@ -34,11 +34,11 @@ const ContactForm = () => {
     }
 
     return (
-        <Card className=' md:w-3/5 w-4/5 m-8 text-left bg-lightBlueRetro text-gray-900 shadow-md'>
+        <Card className='w-full md:w-3/5 sm:w-4/5 m-8 text-left bg-lightBlueRetro text-gray-900 shadow-md'>
             <CardContent>
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-6'>
-                        <div className='space-y-4 mt-4'>
+                        <div className='space-y-3 mt-4'>
                             <FormField
                                 control={form.control}
                                 name='name'

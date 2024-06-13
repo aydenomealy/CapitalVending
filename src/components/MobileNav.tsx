@@ -49,7 +49,7 @@ const MobileNav = () => {
             </div>
 
             <div className='fixed overflow-y-scroll overscroll-y-none inset-0 z-40 flex '>
-                <div className='w-2/5'>
+                <div className=' sm:w-2/5 w-3/5'>
                     <div
                         className='relative flex w-full max-w-sm flex-col overflow-y-auto pb-12 shadow-xl min-h-full bg-peachRetro'>
                         <div className='flex px-4 pb-2 pt-5'>

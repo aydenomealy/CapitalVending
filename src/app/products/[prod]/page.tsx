@@ -20,10 +20,10 @@ export default function Page({params}: { params: { prod: number } }) {
                     <Card key={prod.name}
                           className='sm:text-base text-sm bg-peachRetroOld border-grayRetro border-2 mb-5 group shadow-lg'>
                         <CardContent
-                            className='mt-6 pr-3'>
+                            className='mt-6'>
                             <div className='grid sm:grid-cols-3 h-full grid-cols-2'>
                                 <div
-                                    className='overflow-hidden relative lg:aspect-video aspect-square rounded-lg group-odd:hidden'>
+                                    className='overflow-hidden relative lg:aspect-video aspect-square rounded-lg group-odd:hidden my-auto mr-3'>
                                     <Image
                                         src={prod.imageSrc}
                                         alt='product catagory image'
@@ -33,7 +33,7 @@ export default function Page({params}: { params: { prod: number } }) {
                                         className='object-cover object-center'
                                     />
                                 </div>
-                                <div className='sm:col-span-2 text-left ml-5 mr-2 text-brownRetro'>
+                                <div className='sm:col-span-2 text-left text-brownRetro'>
                                     <div className='xl:text-2xl md:text-lg font-medium mb-5 '>
                                         {prod.name}
                                     </div>
@@ -42,7 +42,7 @@ export default function Page({params}: { params: { prod: number } }) {
                                     </p>
                                 </div>
                                 <div
-                                    className='overflow-hidden relative lg:aspect-video aspect-square rounded-lg group-even:hidden'>
+                                    className='overflow-hidden relative lg:aspect-video aspect-square rounded-lg group-even:hidden my-auto ml-3'>
                                     <Image
                                         src={prod.imageSrc}
                                         alt='product catagory image'
@@ -53,22 +53,6 @@ export default function Page({params}: { params: { prod: number } }) {
                             </div>
                         </CardContent>
                     </Card>
-                    // <div>
-                    //     <div
-                    //         className='overflow-hidden relative lg:aspect-video aspect-square rounded-lg'>
-                    //         <Image
-                    //             src={prod.imageSrc}
-                    //             alt='product catagory image'
-                    //             fill
-                    //             className='object-cover object-center'
-                    //         />
-                    //     </div>
-                    //     <div className='sm:col-span-2 text-left ml-5 mr-2'>
-                    //         <p className='md:text-base text-sm'>
-                    //             {prod.description}
-                    //         </p>
-                    //     </div>
-                    // </div>
                 ))}
             </MaxWidthWrapper>
         </>

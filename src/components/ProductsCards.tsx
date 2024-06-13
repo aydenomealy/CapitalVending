@@ -16,7 +16,7 @@ const ProductsCards = () => {
                         fill
                         placeholder="blur"
                         blurDataURL={item.headerImg}
-                        className='object-cover object-center'
+                        className='object-cover object-center rounded-lg'
                     />
                     <div
                         className='text-grayRetro font-outline-1 text-2xl lg:text-3xl font-extrabold absolute flex inset-0 justify-center items-end drop-shadow-2xl'>

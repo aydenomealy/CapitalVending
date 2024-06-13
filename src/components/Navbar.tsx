@@ -11,11 +11,11 @@ const Navbar = () => {
             <header className='relative bg-blueRetro'>
                 <div className='border-b-2 border-redRetro'>
                     <MaxWidthWrapper>
-                        <div className='flex h-24 items-center'>
+                        <div className='flex sm:h-24 h-20 items-center'>
                             <MobileNav/>
                             <div className='ml-4 flex lg:ml-0'>
                                 <Link href='/' aria-label='home'>
-                                    <Icons.logo className='h-20 w-20'/>
+                                    <Icons.logo className='sm:h-20 sm:w-20 w-16 h-16'/>
                                 </Link>
                             </div>
 

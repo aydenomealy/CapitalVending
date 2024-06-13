@@ -34,11 +34,11 @@ const CareerForm = () => {
     const fileRef = form.register("resume");
 
     return (
-        <Card className=' md:w-3/5 w-4/5 shadow-xl mt-8 text-left bg-blueRetro border-redRetro border-2'>
+        <Card className='w-full md:w-3/5 sm:w-4/5 shadow-xl mt-8 text-left bg-blueRetro border-redRetro border-2'>
             <CardContent>
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-6'>
-                        <div className='space-y-4 mt-4'>
+                        <div className='space-y-3 mt-4'>
                             <FormField
                                 control={form.control}
                                 name='name'

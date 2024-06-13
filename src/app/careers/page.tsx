@@ -14,8 +14,8 @@ export default function Home() {
                         </h1>
                     </div>
 
-                    <p className='mt-6 max-w-prose text-brownRetro text-lg font-medium'>
-                        Join our team and have a rewarding career in the vending and amusement industry. We offer competitive compensation, affordable benefits including 401K with employer matching, & paid time off. Please submit your resume below and we will reach out.
+                    <p className='my-6 md:text-2xl text-lg max-w-prose text-brownRetro font-medium'>
+                        Join our team and have a rewarding career in the vending and amusement industry. We offer competitive compensation, affordable benefits including 401K with employer matching, and paid time off. Please submit your resume below and we will reach out.
                     </p>
                 </div>
 
