@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import defaultTheme from "tailwindcss/defaultTheme";
 
 const config = {
   darkMode: ["class"],
@@ -18,6 +19,7 @@ const config = {
       },
     },
     extend: {
+      fontFamily: { sans: ["Noto_Sans", ...defaultTheme.fontFamily.sans] },
       colors: {
         grayRetro: "#CFCFC4",
         blueRetro: "#183257",

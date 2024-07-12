@@ -10,6 +10,7 @@ import Image from "next/image";
 import ProductsCards from "@/components/ProductsCards";
 import {m, LazyMotion, domAnimation, useInView} from "framer-motion";
 import Banner from "@/components/Banner";
+import poolBackground from "../../public/backgrounds/poolbackground.webp";
 
 const perks = [
     {
@@ -35,9 +36,9 @@ export default function Home() {
 
     return (
         <div>
-            <Banner imgSrc='/backgrounds/arcadeBackground.webp'>
+            <Banner imgSrc="/backgrounds/arcadeBackground.webp">
                 Quality&nbsp;
-                <span className='text-redRetro font-outline-2'> Amusement </span>
+                <span className='text-redRetro sm:font-outline-2 font-outline-1'> Amusement </span>
                 &nbsp;Services
             </Banner>
 
@@ -106,7 +107,7 @@ export default function Home() {
                 <div className='fixed h-full w-full sm:top-16 top-24 '>
                     <Image
                         alt='Pool table background'
-                        src='/backgrounds/poolbackground.webp'
+                        src={poolBackground}
                         placeholder="blur"
                         blurDataURL="data:..."
                         fill
@@ -116,13 +117,13 @@ export default function Home() {
 
                 <div
                     className='text-grayRetro tracking-tight absolute flex flex-col inset-0 justify-center items-center border-t-2 border-b-2 border-grayRetro'>
-                    <h1 className='text-3xl sm:text-4xl md:text-6xl font-extrabold font-outline-2'>
+                    <h1 className='text-3xl sm:text-4xl md:text-6xl font-extrabold sm:font-outline-2 font-outline-1'>
                         Level Up Your Business
                     </h1>
                     <h2 className='text-xl sm:text-2xl md:text-3xl font-bold'>
-                        ────
-                        <span className="font-outline-1"> Partner with Capital Vending </span>
-                        ────
+                        ───
+                        <span className="sm:font-outline-2 font-outline-1"> Partner with Capital Vending </span>
+                        ───
                     </h2>
                 </div>
             </div>
